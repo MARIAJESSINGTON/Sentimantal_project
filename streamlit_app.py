@@ -23,7 +23,7 @@ if st.button("Analyze Sentiment"):
             try:
                 # Call your Flask backend
                 response = requests.post(
-                    "http://127.0.0.1:5000/predict",
+                    "https://sentimantal-project-1.onrender.com",
                     json={"reviews": review}
                 )
                 
